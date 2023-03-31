@@ -86,8 +86,23 @@ if (low < j)                                           //langkah algoritma 11
 	mov_count++;
 }
 //sort the list on the left of pivot using quick sort
-q_short(low, j - 1);                                    //langkah algoritma 12
-//sort the list on the right of pivot using quick sort
-q_short(j + 1, high);                                    //langkah algoritma 13
+q_short (low, j - 1);                                    //langkah algoritma 12
 
+//sort the list on the right of pivot using quick sort
+q_short (j + 1, high);                                    //langkah algoritma 13
+
+}
+
+void display() {
+	cout << "\n==========" << endl;
+	cout << "sorted array" << endl;
+	cout << "============" << endl;
+
+	for (int i = 0; i < n; i++)
+	{
+		cout << arr[i] << " ";
+	}
+
+	cout << "\n\nNumber of comparasion: " << cmp_count << endl;
+	cout << "number of data movements:" << mov_count << endl;
 }
