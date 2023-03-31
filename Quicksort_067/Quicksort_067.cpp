@@ -74,3 +74,14 @@ void q_short(int low, int high)
 		//if the greater element is on the left of the element
 		if (i < j)                                      //langkah algoritma 9
 	}
+}
+
+
+//j now containt the index of the last element in the sorted list
+if (low < j)                                           //langkah algoritma 11
+{
+
+	//move the pivot to its correct position in the list
+	swap(low, j);
+	mov_count++;
+}
