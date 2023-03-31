@@ -38,8 +38,15 @@ void swap(int x, int y)
 	arr[x] = arr[y];
 	arr[y] = temp;
 }
+
 void q_short(int low, int high)
 {
 	int pivot, i, j;
 	if (low > high)                             //langkah algoritma 1
 		return;
+
+	//partition the list into two parts:
+	//one containing elements less that or equal to pivot 
+	//outher conntainning elements greather that pivot
+
+	pivot = arr[low];                           //langkah algoritma 2
