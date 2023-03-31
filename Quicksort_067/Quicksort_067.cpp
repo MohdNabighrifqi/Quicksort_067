@@ -85,3 +85,5 @@ if (low < j)                                           //langkah algoritma 11
 	swap(low, j);
 	mov_count++;
 }
+//sort the list on the left of pivot using quick sort
+q_short(low, j - 1);                                    //langkah algoritma 12
